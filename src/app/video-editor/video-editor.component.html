@@ -1,0 +1,22 @@
+<div class="container">
+  <label for="video-upload">Upload Video File</label>
+  <input #inputFile (change)="videoUploadHandle($event)" type="file" name="video-upload" accept="video/*">
+  <!-- video/ -->
+</div>
+
+<div class="frames_video_container" #frames_container>
+
+  <div #frames_arr_cont>
+    <ng-container *ngFor="let item of frames">
+      {{item}}
+    </ng-container>
+  </div>
+  <ng-container *ngIf="videoLoaded">
+    <video #playableVideo controls="false" id="video_element">
+
+    </video>
+  </ng-container>
+
+
+
+</div>
