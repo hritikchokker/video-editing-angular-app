@@ -7,3 +7,20 @@ video {
   width: 50%;
   height: 50%;
 }
+
+.last_wrapper {
+  display: flex;
+  width: 70vw;
+  height: 30vh;
+}
+
+.frames_images_container {
+  // flex-direction: column;
+  display: flex;
+  width: 2000px;
+  overflow-x: scroll;
+}
+.frames_images_container > img {
+  width: 20px;
+  height: 20px;
+}

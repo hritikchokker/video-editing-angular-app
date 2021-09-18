@@ -6,17 +6,16 @@
 
 <div class="frames_video_container" #frames_container>
 
-  <div #frames_arr_cont>
-    <ng-container *ngFor="let item of frames">
-      {{item}}
-    </ng-container>
-  </div>
-  <ng-container *ngIf="videoLoaded">
-    <video #playableVideo controls="false" id="video_element">
-
+  <ng-container>
+    <video appVideoHandler #playableVideo controls="false" id="video_element">
     </video>
   </ng-container>
+</div>
+<br>
+<br>
+<br>
 
-
-
+<div class="last_wrapper">
+  <div class="frames_images_container" #frames_arr_cont>
+  </div>
 </div>
